@@ -1,0 +1,13 @@
+{
+  "name": "news-image-20261117",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node main.ts",
+    "check": "node main.ts && node -e \"const fs=require('fs'); const b=fs.readFileSync(process.env.MAKEFUN_OUTPUT_DIR||'/output'+'/entry.png'); console.log(b.length, 'bytes')\""
+  }
+}
