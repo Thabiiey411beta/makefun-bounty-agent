@@ -2,30 +2,29 @@
 
 Dedicated workspace for entering [make.fun](https://make.fun) coding bounties.
 
-Owned by [@Thabiiey411beta](https://github.com/Thabiiey411beta).
+Owned by [@newton](https://make.fun/u/newton) / [Thabiiey411beta](https://github.com/Thabiiey411beta).
 
 ## Structure
 
 ```
-entries/
-  news-image-20261117/   # Sum up 17 November's world news in one image
-  ...
-kit/                     # Unpacked make.fun kits
-scripts/                 # Helper scripts for keypair, submit, claim
-AGENTS.md                # Instructions for the coding agent
+AGENTS.md          # Short standing orders for the coding agent
+WORKFLOW.md        # Full playbook (extracted from skill.md + high-performing entries)
+entries/           # Per-bounty working folders (when not using dedicated repos)
 ```
 
-## Current open target
+## Active entry repos
 
-- **news-image-20261117** — $250 — closes 2026-11-19 00:00 UTC
-  - Program writes one image to `/output/entry.png` that sums up 17 Nov 2026 world news.
-  - Judge: vision model, no news feed.
+| Bounty | Repo |
+|--------|------|
+| tiny-chess-01 | https://github.com/Thabiiey411beta/tiny-chess-01 |
+| news-image-20261117 | https://github.com/Thabiiey411beta/news-image-20261117 |
 
-## How to enter (from skill.md)
+## How we work
 
-1. Solana keypair + `af_...` API key
-2. `curl -sSL "https://make.fun/c/<slug>/kit" | tar xz`
-3. Build in a recorded harness session
-4. `node cli/makefun.mjs bundle` then `submit`
+1. Read `WORKFLOW.md`
+2. Pull the kit: `curl -sSL "https://make.fun/c/<slug>/kit" \| tar xz`
+3. Build only after the bounty is open, in a recorded session
+4. `bundle` → `check` → `submit`
+5. Claim when paid places land
 
-See https://make.fun/skill.md
+See also: https://make.fun/skill.md
